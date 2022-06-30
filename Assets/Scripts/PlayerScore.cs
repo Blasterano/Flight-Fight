@@ -17,20 +17,19 @@ public class PlayerScore : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
     }
 
     private void OnTriggerEnter(Collider other)
     {
         if(other.gameObject.CompareTag("Player") && this.gameObject.CompareTag("Ring"))
         {
-            Debug.Log(other.name);
             gameManager.playerScore1++;
+            gameManager.ringCount--;
         }
         else if (other.gameObject.CompareTag("Player 2") && this.gameObject.CompareTag("Ring"))
         {
-            Debug.Log(other.name);
             gameManager.playerScore2++;
+            gameManager.ringCount--;
         }
 
         if (this.gameObject.CompareTag("Finish") && other.gameObject.CompareTag("Player") && gameManager.FinishPoint())
@@ -38,6 +37,7 @@ public class PlayerScore : MonoBehaviour
             gameManager.playerScore1 += 5;
             Destroy(other.gameObject);
             finished = true;
+            Destroy(GameObject.FindGameObjectWithTag("Player 2").gameObject);
             Destroy(this.gameObject);
         }
         else if (this.gameObject.CompareTag("Finish") && other.gameObject.CompareTag("Player 2") && gameManager.FinishPoint())
@@ -45,9 +45,9 @@ public class PlayerScore : MonoBehaviour
             gameManager.playerScore2 += 5;
             Destroy(other.gameObject);
             finished = true;
+            Destroy(GameObject.FindGameObjectWithTag("Player").gameObject);
             Destroy(this.gameObject);
         }
-        else
-            finished = false;
+
     }
 }

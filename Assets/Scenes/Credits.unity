@@ -797,7 +797,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1243244747
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1591,15 +1591,16 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_text: "Lead Designer : Aryan Saraswat\n\nLead 3D Artist : Nabil Abbas\n\nLead
-    2D Artist : Danish maske\n\nLead Programmer : Aryan Saraswat\n\n\n\n\nEnvironment
+    Programmer : Aryan Saraswat\n\nJunior 2D Artist : Danish Maske\n\n\n\n\nEnvironment
     Artist : Aryan Saraswat\n\nProp artist : Nabil Abbas\n\nBackground Artist : Aryan
     Saraswat\n\nAnimation and Cinemetics : Aryan Saraswat\n\nLevel Designer : Aryan
     Saraswat\n\nUser Interface : Danish Maske\n\nAudio and Music : Nabil Abbas\n\n\n\n\nStory
     Artist : Aryan Saraswat\n\nStoryBoard : Nabil Abbas\n\nStory Writer : Nabil Abbas\n\nScene
     Management : Aryan Saraswat\n\n\n\n\nPlayer Control : Aryan Saraswat\n\nEnivironment
     Transitioning : Aryan Saraswat\n\nObjects Behaviour : Aryan Saraswat\n\nGraphical
-    User Interface : Danish Maske\n\nAI Scripting : Aryan Saraswat \n\n\n\n\n\n\nThank
-    You \n\n\nTEAM FLIGHT FIGHT"
+    User Interface : Danish Maske\n\nAI Scripting : Aryan Saraswat \n\n\n\n\tCinematic
+    partner : \n\tHarshit Jain A.K.A. H.J Creation\n\n\n\nThank You \n\n\nTEAM FLIGHT
+    FIGHT"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
